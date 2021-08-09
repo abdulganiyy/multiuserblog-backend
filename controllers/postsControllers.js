@@ -50,14 +50,4 @@ exports.createAPost = async (req, res) => {
         });
       });
   });
-
-  // const newPost = new Post({
-  //   title: req.body.title,
-  //   body: req.body.body,
-  //   user: decodedUser.id,
-  //   coverPhoto: uploadResponse.url,
-  //   createdAt: Date.now(),
-  // });
-
-  // const post = await newPost.save();
 };
