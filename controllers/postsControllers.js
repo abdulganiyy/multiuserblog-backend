@@ -4,7 +4,7 @@ const checkAuth = require("../utils/checkAuth");
 const { cloudinary } = require("../utils/cloudinary");
 
 exports.getAllPosts = async (req, res) => {
-  const posts = await Post.find().select("-__v");
+  const posts = await Post.find().select("-__v").sort("-date");
 
   if (posts) {
     return res.status(200).json({
